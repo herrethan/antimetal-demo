@@ -1,4 +1,4 @@
-import { RiHeart3Line } from "@remixicon/react";
+import { RiEmojiStickerLine } from "@remixicon/react";
 import { AlertProvider, AlertToggler, useAlertStatus } from "./alert-provider";
 import "./App.css";
 import { Connection, CONNECTIONS_ALERT, CONNECTIONS_GREEN } from "./connection";
@@ -37,6 +37,11 @@ const Connections = () => {
             />
           ))
       )}
+      {/* <Connection
+        style={{ top: 80, left: 80 * 5 }}
+        logo={CONNECTIONS_GREEN[0].logo}
+        status="red"
+      /> */}
     </div>
   );
 };
@@ -68,8 +73,8 @@ function App() {
           </div>
           <p className="text-center text-sm opacity-40 mt-16">
             Made with{" "}
-            <RiHeart3Line className="size-4 inline-block align-sub mx-0.5" /> by
-            Ethan Herr{" "}
+            <RiEmojiStickerLine className="size-4 inline-block align-sub mx-0.5" />{" "}
+            by Ethan Herr{" "}
             <a href="https://herrmedia.com" className="block">
               herrmedia.com
             </a>
